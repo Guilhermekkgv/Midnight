@@ -969,8 +969,8 @@ Linux.DeviceType = detectDevice()
 Linux.ActiveNotifications = {}
 Linux.NotificationCounter = 0
 Linux.FrameTransparency = 0.80
-Linux.FrameColor = Color3.fromRGB(25, 25, 29)
-Linux.MainFrameColor = Color3.fromRGB(30, 30, 36)
+Linux.FrameColor = Color3.fromRGB(27, 27, 27)
+Linux.MainFrameColor = Color3.fromRGB(8, 8, 8)
 Linux.ToggleIconAssetId = "rbxassetid://99020804096711"
 Linux.IgnoredElements = {}
 Linux.SavedConfigs = {}
@@ -2612,13 +2612,13 @@ function Linux.Create(config)
         if config.Default == true then
             DefaultTab = tabIndex
             task.spawn(function()
-                task.wait(0.1)
+                task.wait(0.0001)
                 SelectTab()
             end)
         elseif CurrentTab == nil and tabOrder == 1 then
             DefaultTab = tabIndex
             task.spawn(function()
-                task.wait(0.1)
+                task.wait(0.0001)
                 SelectTab()
             end)
         end
